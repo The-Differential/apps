@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Privacy Policy for Contact Scanner by The Differential">
+    <title>Privacy Policy - Contact Scanner</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            opacity: 0.95;
+            font-size: 1.1em;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .back-link:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        main {
+            background: white;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        h3 {
+            color: #555;
+            font-size: 1.4em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .warning strong {
+            color: #856404;
+        }
+
+        .highlight {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .last-updated {
+            background: #e7f3ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 600;
+            color: #0066cc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #666;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                padding: 30px 20px;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="index.html" class="back-link">← Back to Home</a>
+            <h1>Privacy Policy</h1>
+            <p>Contact Scanner by The Differential</p>
+        </header>
+
+        <main>
+            <div class="last-updated">
+                <strong>Last Updated:</strong> October 5, 2025
+            </div>
+
+            <h2>Introduction</h2>
+            <p>Contact Scanner ("we", "our", or "the app") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.</p>
+
+            <h2>Information We Collect</h2>
+
+            <h3>1. Camera and Photo Library Access</h3>
+            <ul>
+                <li><strong>Purpose:</strong> To capture or select images of contact sheets for processing</li>
+                <li><strong>Storage:</strong> Images are temporarily processed and NOT permanently stored on our servers</li>
+                <li><strong>Retention:</strong> Images are immediately discarded after contact extraction is complete</li>
+            </ul>
+
+            <h3>2. Contact Information Extracted from Images</h3>
+            <ul>
+                <li><strong>What We Extract:</strong> Names, phone numbers, email addresses, job titles, and company information visible in your photos</li>
+                <li><strong>How It's Used:</strong> Extracted information is presented to you for review and is only saved to your device's Contacts app with your explicit permission</li>
+                <li><strong>Server Processing:</strong> Images are sent to our secure backend API (hosted on Vercel) for AI processing via Google Gemini AI</li>
+            </ul>
+
+            <h3>3. Contacts Permission</h3>
+            <ul>
+                <li><strong>Purpose:</strong> To save extracted contact information to your device's native Contacts app</li>
+                <li><strong>Control:</strong> You have full control over which contacts are saved. We only save contacts when you explicitly tap "Save" or "Add Contacts"</li>
+            </ul>
+
+            <h2>Third-Party Services</h2>
+
+            <h3>Google Gemini AI</h3>
+            <p>We use Google's Gemini AI service to analyze images and extract contact information.</p>
+            <ul>
+                <li><strong>Data Sent:</strong> Images you choose to process through the app</li>
+                <li><strong>Purpose:</strong> AI-powered optical character recognition and contact information extraction</li>
+                <li><strong>Google's Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
+                <li><strong>Important:</strong> Your images are processed according to Google's privacy policies</li>
+            </ul>
+
+            <h3>Vercel Hosting</h3>
+            <p>Our backend API is hosted on Vercel's infrastructure.</p>
+            <ul>
+                <li><strong>Data Transmitted:</strong> Images for processing, API requests</li>
+                <li><strong>Purpose:</strong> Secure cloud infrastructure for our processing services</li>
+                <li><strong>Vercel's Privacy Policy:</strong> <a href="https://vercel.com/legal/privacy-policy" target="_blank">https://vercel.com/legal/privacy-policy</a></li>
+            </ul>
+
+            <h2>How We Use Your Information</h2>
+            <ol>
+                <li><strong>Contact Extraction:</strong> Process images to identify and extract contact information using AI</li>
+                <li><strong>Contact Management:</strong> Save extracted contacts to your device's Contacts app (with your permission)</li>
+                <li><strong>App Functionality:</strong> Provide real-time processing updates and error handling</li>
+            </ol>
+
+            <h2>Data Security</h2>
+
+            <div class="highlight">
+                <h3>Measures We Take:</h3>
+                <ul>
+                    <li>✅ <strong>HTTPS Encryption:</strong> All data transmitted between the app and our servers uses secure HTTPS connections</li>
+                    <li>✅ <strong>No Permanent Storage:</strong> Images are NOT stored on our servers after processing</li>
+                    <li>✅ <strong>No User Accounts:</strong> We do not require user registration or store personal profiles</li>
+                    <li>✅ <strong>On-Device Storage:</strong> Extracted contacts are saved only to your device's local Contacts app</li>
+                </ul>
+            </div>
+
+            <h3>Important Security Notes:</h3>
+            <ul>
+                <li>We do NOT store your images or extracted contact data on our servers</li>
+                <li>We do NOT share your data with third parties for marketing or advertising purposes</li>
+                <li>Processing is done in real-time and data is immediately discarded after extraction</li>
+            </ul>
+
+            <h2>Data Retention</h2>
+            <ul>
+                <li><strong>Images:</strong> Deleted immediately after AI processing completes (typically 30-40 seconds)</li>
+                <li><strong>Extracted Contacts:</strong> Only stored on YOUR device in the Contacts app, under your control</li>
+                <li><strong>API Logs:</strong> Server logs containing request metadata (timestamps, image sizes) are retained for up to 30 days for debugging and error analysis. These logs do NOT contain your actual images or extracted contact information.</li>
+            </ul>
+
+            <h2>Medical/Health Information</h2>
+
+            <div class="warning">
+                <p><strong>IMPORTANT NOTICE:</strong> This app is designed for extracting professional contact information from directory sheets, often in medical facilities.</p>
+
+                <p><strong>⚠️ HIPAA Compliance:</strong> This app is NOT HIPAA-compliant and should NOT be used to process Protected Health Information (PHI) or patient data.</p>
+
+                <p><strong>⚠️ Intended Use:</strong> Only use this app to scan:</p>
+                <ul>
+                    <li>Professional contact directories</li>
+                    <li>Business cards</li>
+                    <li>Staff contact sheets</li>
+                    <li>Department phone lists</li>
+                </ul>
+
+                <p><strong>❌ DO NOT</strong> use this app to scan:</p>
+                <ul>
+                    <li>Patient information</li>
+                    <li>Medical records</li>
+                    <li>Prescription information</li>
+                    <li>Any documents containing sensitive health data</li>
+                </ul>
+            </div>
+
+            <h2>Your Rights and Choices</h2>
+
+            <h3>You Have the Right To:</h3>
+            <ol>
+                <li><strong>Delete Contacts:</strong> Remove any saved contacts from your device's Contacts app at any time</li>
+                <li><strong>Revoke Permissions:</strong> Disable camera and contacts access in your device settings</li>
+                <li><strong>Stop Using the App:</strong> Uninstall the app at any time, which removes all app data from your device</li>
+            </ol>
+
+            <h3>How to Control Your Data:</h3>
+            <ul>
+                <li><strong>Camera Access:</strong> Settings → Contact Scanner → Camera → Toggle Off</li>
+                <li><strong>Contacts Access:</strong> Settings → Contact Scanner → Contacts → Toggle Off</li>
+                <li><strong>Delete Saved Contacts:</strong> Open Contacts app → Select contact → Delete</li>
+            </ul>
+
+            <h2>Children's Privacy</h2>
+            <p>Contact Scanner is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
+
+            <h2>International Users</h2>
+            <p>This app processes data using servers located in the United States. By using Contact Scanner, you consent to the transfer and processing of your data in the United States.</p>
+
+            <h2>Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by:</p>
+            <ul>
+                <li>Updating the "Last Updated" date at the top of this policy</li>
+                <li>Displaying a notice in the app (for material changes)</li>
+            </ul>
+
+            <h2>Contact Us</h2>
+            <p>If you have questions about this Privacy Policy or our data practices, please contact us at:</p>
+            <p><strong>Email:</strong> <a href="mailto:app.thedifferential@gmail.com">app.thedifferential@gmail.com</a><br>
+            <strong>Developer:</strong> The Differential</p>
+
+            <h2>Your Consent</h2>
+            <p>By using Contact Scanner, you consent to this Privacy Policy and agree to its terms.</p>
+
+            <hr style="margin: 40px 0; border: none; border-top: 2px solid #e0e0e0;">
+
+            <div class="highlight">
+                <h3>Summary:</h3>
+                <ul>
+                    <li>✅ We process images to extract contacts using AI</li>
+                    <li>✅ Images are NOT permanently stored</li>
+                    <li>✅ Data is only saved to YOUR device when you choose</li>
+                    <li>✅ We use Google Gemini AI and Vercel hosting</li>
+                    <li>❌ Not HIPAA-compliant - Do not scan patient data</li>
+                    <li>❌ No user accounts or tracking</li>
+                    <li>❌ No marketing or advertising use of your data</li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <p><a href="index.html">← Back to Home</a> | <a href="mailto:app.thedifferential@gmail.com">Contact Support</a></p>
+            <p>&copy; 2025 The Differential. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

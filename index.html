@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Differential - Medical apps designed for healthcare professionals">
+    <title>The Differential - Medical Apps for Professionals</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+        }
+
+        header h1 {
+            font-size: 3em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        header p {
+            font-size: 1.3em;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        /* Main Content */
+        main {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+
+        /* Apps Section */
+        .apps-section {
+            padding: 60px 40px;
+        }
+
+        .section-title {
+            font-size: 2em;
+            margin-bottom: 40px;
+            text-align: center;
+            color: #667eea;
+        }
+
+        .app-card {
+            display: flex;
+            align-items: center;
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .app-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .app-icon {
+            font-size: 4em;
+            margin-right: 30px;
+            flex-shrink: 0;
+        }
+
+        .app-info h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .app-info p {
+            color: #666;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+
+        .app-status {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+
+        .status-available {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status-coming-soon {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .app-store-button {
+            display: inline-block;
+            background: #000;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: background 0.3s;
+        }
+
+        .app-store-button:hover {
+            background: #333;
+        }
+
+        /* Support Section */
+        .support-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .support-section h2 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .support-section p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .contact-email {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 15px 30px;
+            border-radius: 30px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: background 0.3s;
+        }
+
+        .contact-email:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: white;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            opacity: 0.9;
+            transition: opacity 0.3s;
+        }
+
+        footer a:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        footer p {
+            margin-top: 20px;
+            opacity: 0.8;
+            font-size: 0.9em;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            .app-card {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .app-icon {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+
+            .apps-section, .support-section {
+                padding: 40px 20px;
+            }
+
+            .section-title {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>The Differential</h1>
+            <p>Medical Apps Designed for Healthcare Professionals</p>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Apps Section -->
+            <section class="apps-section">
+                <h2 class="section-title">Our Apps</h2>
+
+                <!-- Contact Scanner -->
+                <div class="app-card">
+                    <div class="app-icon">👤➕</div>
+                    <div class="app-info">
+                        <h3>Contact Scan</h3>
+                        <p>AI-powered contact extraction from photos of contact sheets, business cards, and professional directories. Perfect for digitizing hospital department directories and networking contacts.</p>
+                        <span class="app-status status-available">Available Now</span>
+                        <br>
+                        <!-- Uncomment when published -->
+                        <!-- <a href="YOUR_APP_STORE_URL" class="app-store-button">View on App Store</a> -->
+                    </div>
+                </div>
+
+                <!-- Placeholder for Future Apps -->
+                <div class="app-card">
+                    <div class="app-icon">⚕️</div>
+                    <div class="app-info">
+                        <h3>More Medical Apps Coming Soon</h3>
+                        <p>We're working on additional tools to streamline your healthcare workflow. Stay tuned!</p>
+                        <span class="app-status status-coming-soon">In Development</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Support Section -->
+            <section class="support-section">
+                <h2>Need Support?</h2>
+                <p>We're here to help. Get in touch with any questions, feedback, or issues.</p>
+                <a href="mailto:app.thedifferential@gmail.com" class="contact-email">
+                    📧 app.thedifferential@gmail.com
+                </a>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <nav>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="mailto:app.thedifferential@gmail.com">Contact</a>
+            </nav>
+            <p>&copy; 2025 The Differential. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
