@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Privacy Policy for Contact Scan by The Differential">
-    <title>Privacy Policy - Contact Scan</title>
+    <meta name="description" content="Privacy Policy for Contacts MD by The Differential">
+    <title>Privacy Policy - Contacts MD</title>
     <style>
         * {
             margin: 0;
@@ -85,7 +85,7 @@
             margin-bottom: 15px;
         }
 
-        ul {
+        ul, ol {
             margin-left: 20px;
             margin-bottom: 15px;
         }
@@ -157,173 +157,143 @@
 <body>
     <div class="container">
         <header>
-            <a href="index.html" class="back-link">← Back to Home</a>
+            <a href="index.html" class="back-link">← Back to App</a>
             <h1>Privacy Policy</h1>
-            <p>Contact Scan by The Differential</p>
+            <p>Contacts MD by The Differential</p>
         </header>
 
         <main>
             <div class="last-updated">
-                <strong>Last Updated:</strong> October 5, 2025
+                <strong>Last Updated:</strong> January 26, 2026
             </div>
 
             <h2>Introduction</h2>
-            <p>Contact Scan ("we", "our", or "the app") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application.</p>
+            <p>Contacts MD ("we", "our", or "the app") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application, including our use of account synchronization and AI processing.</p>
 
             <h2>Information We Collect</h2>
 
-            <h3>1. Camera and Photo Library Access</h3>
+            <h3>1. Consent for AI Processing</h3>
+            <p>To provide our scanning service, we must send image data to Google AI Services for text extraction. We will ask for your explicit permission before your first scan. The image is used solely for processing and is not stored. You may decline this permission, though the app cannot function without it.</p>
+
+            <h3>2. Account Information (Optional)</h3>
+            <p>You may use the app anonymously or sign in using Apple Sign-In. If you choose to sign in, we collect:</p>
             <ul>
-                <li><strong>Purpose:</strong> To capture or select images of contact sheets for processing</li>
-                <li><strong>Storage:</strong> Images are temporarily processed and NOT permanently stored on our servers</li>
-                <li><strong>Retention:</strong> Images are immediately discarded after contact extraction is complete</li>
+                <li><strong>Identifier:</strong> Your Apple User ID (for authentication).</li>
+                <li><strong>Name & Email:</strong> Only if you choose to share them during the Apple Sign-In process.</li>
+                <li><strong>Purpose:</strong> To sync your scan quota and purchase history across multiple devices.</li>
             </ul>
 
-            <h3>2. Contact Information Extracted from Images</h3>
+            <h3>3. Purchase and Usage Data</h3>
             <ul>
-                <li><strong>What We Extract:</strong> Names, phone numbers, email addresses, job titles, and company information visible in your photos</li>
-                <li><strong>How It's Used:</strong> Extracted information is presented to you for review and is only saved to your device's Contacts app with your explicit permission</li>
-                <li><strong>Server Processing:</strong> Images are sent to our secure backend API (hosted on Vercel) for AI processing via Google Gemini AI</li>
+                <li><strong>Transaction History:</strong> We store records of your In-App Purchases (Scan Packs) to ensure you receive the credits you paid for.</li>
+                <li><strong>Usage Metrics:</strong> We track the number of scans performed to manage free quotas and paid credits.</li>
+                <li><strong>Device Sync:</strong> If signed in, this data is synchronized securely to our backend database.</li>
             </ul>
 
-            <h3>3. Contacts Permission</h3>
+            <h3>4. Images and Contact Extraction</h3>
             <ul>
-                <li><strong>Purpose:</strong> To save extracted contact information to your device's native Contacts app</li>
-                <li><strong>Control:</strong> You have full control over which contacts are saved. We only save contacts when you explicitly tap "Save" or "Add Contacts"</li>
+                <li><strong>Transient Processing:</strong> Images you capture or select are uploaded to our secure backend solely for processing.</li>
+                <li><strong>No Image Storage:</strong> Images are processed in real-time and <strong>immediately discarded</strong> once the contact information is extracted. We do not persist your photos on our servers.</li>
+                <li><strong>Extracted Data:</strong> The text extracted from the image is returned to your device and is not permanently stored on our backend servers.</li>
+            </ul>
+
+            <h3>5. Device Contacts Access</h3>
+            <p>We request access to your device's Contacts library for two specific purposes:</p>
+            <ul>
+                <li><strong>Duplicate Detection:</strong> To prevent creating duplicate entries, the app reads your existing contact phone numbers to compare them against new scans. This processing happens locally on your device (or in ephemeral memory) and your existing contact list is <strong>never</strong> uploaded to our servers.</li>
+                <li><strong>Saving Contacts:</strong> To write the new, extracted information to your address book.</li>
+                <li><strong>Notes:</strong> We access the Notes field of your contacts to append timestamped scan logs and context (e.g., "Scanned on 2026-Jan-26").</li>
             </ul>
 
             <h2>Third-Party Services</h2>
 
-            <h3>Google Gemini AI</h3>
-            <p>We use Google's Gemini AI service to analyze images and extract contact information.</p>
+            <h3>Google AI Services</h3>
+            <p>We use Google's enterprise AI services to analyze images and extract contact information.</p>
             <ul>
-                <li><strong>Data Sent:</strong> Images you choose to process through the app</li>
-                <li><strong>Purpose:</strong> AI-powered optical character recognition and contact information extraction</li>
-                <li><strong>Google's Privacy Policy:</strong> <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
-                <li><strong>Important:</strong> Your images are processed according to Google's privacy policies</li>
+                <li><strong>Data Processed:</strong> Image data for Optical Character Recognition (OCR).</li>
+                <li><strong>Privacy:</strong> Data is processed according to Google's privacy terms for enterprise AI. Images are not used to train Google's models.</li>
             </ul>
 
-            <h3>Vercel Hosting</h3>
-            <p>Our backend API is hosted on Vercel's infrastructure.</p>
+            <h3>Infrastructure (Vercel & Neon)</h3>
+            <p>Our backend services are hosted on Vercel, and user account data (quotas/IDs) is stored in a PostgreSQL database (Neon).</p>
             <ul>
-                <li><strong>Data Transmitted:</strong> Images for processing, API requests</li>
-                <li><strong>Purpose:</strong> Secure cloud infrastructure for our processing services</li>
-                <li><strong>Vercel's Privacy Policy:</strong> <a href="https://vercel.com/legal/privacy-policy" target="_blank">https://vercel.com/legal/privacy-policy</a></li>
+                <li><strong>Security:</strong> All data is encrypted in transit and at rest.</li>
+                <li><strong>Location:</strong> Data is processed in secure data centers (utilizing tier-1 cloud infrastructure providers).</li>
+            </ul>
+
+            <h3>Apple Services</h3>
+            <ul>
+                <li><strong>Authentication:</strong> We use Apple Sign-In for secure authentication.</li>
+                <li><strong>Payments:</strong> All financial transactions are processed directly by Apple via StoreKit. We do not process or store credit card information.</li>
             </ul>
 
             <h2>How We Use Your Information</h2>
             <ol>
-                <li><strong>Contact Extraction:</strong> Process images to identify and extract contact information using AI</li>
-                <li><strong>Contact Management:</strong> Save extracted contacts to your device's Contacts app (with your permission)</li>
-                <li><strong>App Functionality:</strong> Provide real-time processing updates and error handling</li>
+                <li><strong>Service Provision:</strong> To convert images into saveable contact data.</li>
+                <li><strong>Account Management:</strong> To maintain your balance of remaining scans and sync them across your devices.</li>
+                <li><strong>Improvements:</strong> We analyze anonymized usage logs (e.g., "Scan failed due to timeout") to improve app reliability.</li>
             </ol>
 
-            <h2>Data Security</h2>
+            <h2>Data Retention & Deletion</h2>
 
-            <div class="highlight">
-                <h3>Measures We Take:</h3>
-                <ul>
-                    <li>✅ <strong>HTTPS Encryption:</strong> All data transmitted between the app and our servers uses secure HTTPS connections</li>
-                    <li>✅ <strong>No Permanent Storage:</strong> Images are NOT stored on our servers after processing</li>
-                    <li>✅ <strong>No User Accounts:</strong> We do not require user registration or store personal profiles</li>
-                    <li>✅ <strong>On-Device Storage:</strong> Extracted contacts are saved only to your device's local Contacts app</li>
-                </ul>
-            </div>
-
-            <h3>Important Security Notes:</h3>
+            <h3>Retention</h3>
             <ul>
-                <li>We do NOT store your images or extracted contact data on our servers</li>
-                <li>We do NOT share your data with third parties for marketing or advertising purposes</li>
-                <li>Processing is done in real-time and data is immediately discarded after extraction</li>
+                <li><strong>Images:</strong> Deleted immediately after processing (seconds).</li>
+                <li><strong>User Accounts:</strong> Retained as long as your account is active to maintain your purchase history.</li>
+                <li><strong>Logs:</strong> Technical logs are retained for 30 days for debugging. These logs contain metadata (e.g., "Image size: 4MB", "Processing time: 2s") but <strong>NEVER</strong> contain image data, OCR text, or extracted contact fields.</li>
             </ul>
 
-            <h2>Data Retention</h2>
+            <h3>Account Deletion (Right to be Forgotten)</h3>
+            <p>If you have created an account via Apple Sign-In, you may request full account deletion directly within the app:</p>
             <ul>
-                <li><strong>Images:</strong> Deleted immediately after AI processing completes (typically 30-40 seconds)</li>
-                <li><strong>Extracted Contacts:</strong> Only stored on YOUR device in the Contacts app, under your control</li>
-                <li><strong>API Logs:</strong> Server logs containing request metadata (timestamps, image sizes) are retained for up to 30 days for debugging and error analysis. These logs do NOT contain your actual images or extracted contact information.</li>
+                <li>Go to <strong>Settings</strong> &rarr; <strong>Delete Account</strong>.</li>
+                <li>This will permanently remove your User ID, purchase history, and scan quotas from our database.</li>
+                <li>This action is irreversible.</li>
             </ul>
 
-            <h2>Medical/Health Information</h2>
+            <h2>Medical & Professional Use Warning</h2>
 
             <div class="warning">
-                <p><strong>IMPORTANT NOTICE:</strong> This app is designed for extracting professional contact information from directory sheets, often in medical facilities.</p>
+                <p><strong>IMPORTANT NOTICE:</strong></p>
+                <p><strong>⚠️ HIPAA Compliance:</strong> This app is <strong>NOT</strong> HIPAA-compliant. While we do not store images, the transmission of data involves third-party cloud processing (Google AI).</p>
 
-                <p><strong>⚠️ HIPAA Compliance:</strong> This app is NOT HIPAA-compliant and should NOT be used to process Protected Health Information (PHI) or patient data.</p>
-
-                <p><strong>⚠️ Intended Use:</strong> Only use this app to scan:</p>
+                <p><strong>❌ DO NOT SCAN:</strong></p>
                 <ul>
-                    <li>Professional contact directories</li>
-                    <li>Business cards</li>
-                    <li>Staff contact sheets</li>
-                    <li>Department phone lists</li>
+                    <li>Patient face sheets</li>
+                    <li>Medical records containing PHI (Protected Health Information)</li>
+                    <li>Prescription data</li>
                 </ul>
 
-                <p><strong>❌ DO NOT</strong> use this app to scan:</p>
+                <p><strong>✅ INTENDED USE:</strong> This app is strictly for digitizing <strong>public or professional</strong> directory information, such as staff contact lists, business cards, and department rosters.</p>
+            </div>
+
+            <h2>Security Measures</h2>
+            <div class="highlight">
                 <ul>
-                    <li>Patient information</li>
-                    <li>Medical records</li>
-                    <li>Prescription information</li>
-                    <li>Any documents containing sensitive health data</li>
+                    <li>✅ <strong>Encryption:</strong> HTTPS/TLS 1.3 for all network communication.</li>
+                    <li>✅ <strong>Authentication:</strong> JSON Web Tokens (JWT) validating Apple Identity Tokens.</li>
+                    <li>✅ <strong>Access Control:</strong> Strict database policies ensuring users can only access their own data.</li>
+                    <li>✅ <strong>Ephemeral Processing:</strong> "Process and Discard" architecture for image handling.</li>
                 </ul>
             </div>
 
-            <h2>Your Rights and Choices</h2>
-
-            <h3>You Have the Right To:</h3>
-            <ol>
-                <li><strong>Delete Contacts:</strong> Remove any saved contacts from your device's Contacts app at any time</li>
-                <li><strong>Revoke Permissions:</strong> Disable camera and contacts access in your device settings</li>
-                <li><strong>Stop Using the App:</strong> Uninstall the app at any time, which removes all app data from your device</li>
-            </ol>
-
-            <h3>How to Control Your Data:</h3>
-            <ul>
-                <li><strong>Camera Access:</strong> Settings → Contact Scan → Camera → Toggle Off</li>
-                <li><strong>Contacts Access:</strong> Settings → Contact Scan → Contacts → Toggle Off</li>
-                <li><strong>Delete Saved Contacts:</strong> Open Contacts app → Select contact → Delete</li>
-            </ul>
-
             <h2>Children's Privacy</h2>
-            <p>Contact Scan is not intended for use by children under the age of 13. We do not knowingly collect personal information from children under 13.</p>
-
-            <h2>International Users</h2>
-            <p>This app processes data using servers located in the United States. By using Contact Scan, you consent to the transfer and processing of your data in the United States.</p>
-
-            <h2>Changes to This Privacy Policy</h2>
-            <p>We may update this Privacy Policy from time to time. We will notify you of any changes by:</p>
-            <ul>
-                <li>Updating the "Last Updated" date at the top of this policy</li>
-                <li>Displaying a notice in the app (for material changes)</li>
-            </ul>
+            <p>Contacts MD is not intended for use by children under the age of 13. We do not knowingly collect personal information from children.</p>
 
             <h2>Contact Us</h2>
             <p>If you have questions about this Privacy Policy or our data practices, please contact us at:</p>
             <p><strong>Email:</strong> <a href="mailto:app.thedifferential@gmail.com">app.thedifferential@gmail.com</a><br>
-            <strong>Developer:</strong> The Differential</p>
-
-            <h2>Your Consent</h2>
-            <p>By using Contact Scan, you consent to this Privacy Policy and agree to its terms.</p>
+            <strong>Developer:</strong> The Differential App</p>
 
             <hr style="margin: 40px 0; border: none; border-top: 2px solid #e0e0e0;">
 
-            <div class="highlight">
-                <h3>Summary:</h3>
-                <ul>
-                    <li>✅ We process images to extract contacts using AI</li>
-                    <li>✅ Images are NOT permanently stored</li>
-                    <li>✅ Data is only saved to YOUR device when you choose</li>
-                    <li>✅ We use Google Gemini AI and Vercel hosting</li>
-                    <li>❌ Not HIPAA-compliant - Do not scan patient data</li>
-                    <li>❌ No user accounts or tracking</li>
-                    <li>❌ No marketing or advertising use of your data</li>
-                </ul>
-            </div>
+            <p style="font-size: 0.9em; color: #666; text-align: center;">
+                <em>By using Contacts MD, you consent to this Privacy Policy.</em>
+            </p>
         </main>
 
         <footer>
-            <p><a href="index.html">← Back to Home</a> | <a href="mailto:app.thedifferential@gmail.com">Contact Support</a></p>
-            <p>&copy; 2025 The Differential. All rights reserved.</p>
+            <p>&copy; 2026 THE DIFFERENTIAL APP. All rights reserved.</p>
         </footer>
     </div>
 </body>
