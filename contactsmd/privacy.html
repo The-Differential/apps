@@ -192,7 +192,7 @@
             <ul>
                 <li><strong>Transaction History:</strong> We store records of your In-App Purchases (Scan Packs) to ensure you receive the credits you paid for. This includes Apple's transaction ID for each purchase.</li>
                 <li><strong>Usage Metrics:</strong> We track the number of scans performed to manage free quotas and paid credits.</li>
-                <li><strong>Purchase Recovery:</strong> If you get a new device, you can restore your purchases using Apple's "Restore Purchases" feature. We use Apple's transaction IDs to identify and recover your previous purchases—no sign-in required.</li>
+                <li><strong>Purchase Recovery:</strong> If you get a new device, you can restore your purchases using Apple's "Restore Purchases" feature. We use Apple's transaction IDs to identify and recover your previous purchases—no sign-in required. When recovering, we preserve the higher balance if credits exist on both your current device and a recovered account.</li>
             </ul>
 
             <h3>4. Images and Contact Extraction</h3>
@@ -250,12 +250,14 @@
             </ul>
 
             <h3>Data Removal</h3>
-            <p>Since we use anonymous identifiers with no personal information:</p>
+            <p>You can delete all your data at any time:</p>
             <ul>
-                <li>There is no "account" to delete in the traditional sense.</li>
-                <li>If you wish to start fresh, you can delete the app. Your Keychain identifier will be removed when you sign out of iCloud or reset your device.</li>
-                <li>If you have specific concerns, contact us and we can remove the anonymous record associated with your device ID.</li>
+                <li><strong>In-App Deletion:</strong> Go to <strong>Settings → Delete My Data</strong> to permanently remove all your data from our servers, including your device ID, scan credits, and purchase history.</li>
+                <li><strong>What Gets Deleted:</strong> Your anonymous device identifier, scan quota, purchase records, and usage logs are permanently erased from our database.</li>
+                <li><strong>Local Data:</strong> The deletion also clears all local data on your device, including your scan history and cached settings.</li>
+                <li><strong>Fresh Start:</strong> After deletion, you can continue using the app with a new anonymous identity and the standard free scan quota.</li>
             </ul>
+            <p><strong>Note:</strong> Data deletion is irreversible. Any purchased scan credits will be lost and cannot be recovered.</p>
 
             <h2>Medical & Professional Use Warning</h2>
 
