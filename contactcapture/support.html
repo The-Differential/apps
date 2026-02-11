@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Support & FAQ for Contact Capture by The Differential">
+    <title>Support & FAQ - Contact Capture</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f7;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 15px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            opacity: 0.95;
+            font-size: 1.1em;
+        }
+
+        .back-link {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            margin-bottom: 20px;
+            opacity: 0.9;
+        }
+
+        .back-link:hover {
+            opacity: 1;
+            text-decoration: underline;
+        }
+
+        main {
+            background: white;
+            padding: 50px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        .faq-item {
+            margin-bottom: 25px;
+        }
+
+        .faq-question {
+            font-size: 1.15em;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 8px;
+        }
+
+        .faq-answer {
+            color: #555;
+            font-size: 1em;
+        }
+
+        .faq-answer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .faq-answer a:hover {
+            text-decoration: underline;
+        }
+
+        .faq-divider {
+            border: none;
+            border-top: 1px solid #eee;
+            margin: 25px 0;
+        }
+
+        .highlight {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .warning {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .warning strong {
+            color: #856404;
+        }
+
+        .contact-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact-card h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .contact-card p {
+            opacity: 0.9;
+            margin-bottom: 20px;
+            font-size: 1.05em;
+        }
+
+        .contact-email {
+            display: inline-block;
+            background: rgba(255,255,255,0.2);
+            padding: 12px 28px;
+            border-radius: 30px;
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05em;
+            transition: background 0.3s;
+        }
+
+        .contact-email:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .response-note {
+            margin-top: 15px;
+            font-size: 0.9em;
+            opacity: 0.75;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            color: #666;
+        }
+
+        footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                padding: 30px 20px;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .contact-card {
+                padding: 30px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="../" class="back-link">&larr; Back to Home</a>
+            <h1>Support & FAQ</h1>
+            <p>Contact Capture by The Differential</p>
+        </header>
+
+        <main>
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+                <p class="faq-question">How does Contact Capture work?</p>
+                <p class="faq-answer">Take a photo of any page containing contact information &mdash; a business card, staff directory, sign-in sheet, or printed list. Our AI reads the image and extracts names, phone numbers, emails, addresses, and job titles. You review each contact, make any edits, and save directly to your phone's Contacts app.</p>
+            </div>
+
+            <hr class="faq-divider">
+
+            <div class="faq-item">
+                <p class="faq-question">Why does scanning take 30&ndash;40 seconds?</p>
+                <p class="faq-answer">The AI carefully analyses every detail in the image to produce accurate, structured contacts. This takes a bit longer than simple OCR, but it means you get properly formatted phone numbers, correctly split names, and labelled fields &mdash; ready to save without manual cleanup.</p>
+            </div>
+
+            <hr class="faq-divider">
+
+            <div class="faq-item">
+                <p class="faq-question">What types of images work best?</p>
+                <p class="faq-answer">The app works with business cards, staff directories, conference badges, sign-in sheets, printed contact lists, and similar materials. For best results, ensure the text is legible and the photo is well-lit. The AI can handle multiple contacts in a single image.</p>
+            </div>
+
+            <hr class="faq-divider">
+
+            <div class="faq-item">
+                <p class="faq-question">Is my data safe?</p>
+                <p class="faq-answer">Yes. Contact Capture is built with privacy at its core. You never need to create an account or sign in. Images are processed by AI and immediately discarded &mdash; they are never stored on our servers. Your existing contacts are checked for duplicates locally on your device and are never uploaded. Read our full <a href="privacy.html">Privacy Policy</a> for details.</p>
+            </div>
+
+            <hr class="faq-divider">
+
+            <div class="faq-item">
+                <p class="faq-question">How do I restore purchases on a new device?</p>
+                <p class="faq-answer">Open the app and go to <strong>Settings &rarr; Restore Purchases</strong>. The app uses your Apple transaction history to find and recover your remaining scan credits. No sign-in is needed.</p>
+            </div>
+
+            <hr class="faq-divider">
+
+            <div class="faq-item">
+                <p class="faq-question">How do I delete my data?</p>
+                <p class="faq-answer">Go to <strong>Settings &rarr; Delete My Data</strong>. This permanently removes all your data from our servers (device ID, scan credits, purchase records) and clears local data on your device. You can continue using the app with a fresh identity and 5 free scans.</p>
+            </div>
+
+            <div class="warning">
+                <p><strong>Note:</strong> Data deletion is irreversible. Any remaining purchased scan credits will be lost and cannot be recovered.</p>
+            </div>
+
+            <hr class="faq-divider">
+
+            <div class="faq-item">
+                <p class="faq-question">Do I need a subscription?</p>
+                <p class="faq-answer">No. Contact Capture has no subscriptions. You get 5 free scans to start, then purchase scan packs as needed. Packs never expire.</p>
+            </div>
+
+            <hr class="faq-divider">
+
+            <div class="faq-item">
+                <p class="faq-question">What if I scan a contact I already have?</p>
+                <p class="faq-answer">Contact Capture prevents messy address books. If we detect an existing contact (by name, email, or phone), we flag it as a duplicate. You can choose to <strong>Merge</strong> the new details (like a new job title or extension) into your existing contact, save it as a new entry, or skip it entirely.</p>
+            </div>
+
+            <hr class="faq-divider">
+
+            <div class="faq-item">
+                <p class="faq-question">Can I edit contacts before saving?</p>
+                <p class="faq-answer">Yes. After scanning, you can tap any contact to edit names, phone numbers, emails, addresses, job titles, and labels before saving to your phone.</p>
+            </div>
+
+            <h2>Contact Us</h2>
+
+            <p>Can't find what you're looking for? We're happy to help.</p>
+
+            <div class="contact-card">
+                <h3>Get in Touch</h3>
+                <p>Send us an email and we'll get back to you as soon as we can.</p>
+                <a href="mailto:app.thedifferential@gmail.com" class="contact-email">app.thedifferential@gmail.com</a>
+                <p class="response-note">We typically respond within 1&ndash;2 business days.</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 <a href="../">The Differential</a>. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
